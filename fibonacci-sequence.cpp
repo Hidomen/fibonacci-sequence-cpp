@@ -1,11 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
 int main(){
     int size;
-    cout << "How far do you want to go?: " << endl;
-    cin >> size;
+    std::cout << "How far do you want to go?: \n";
+    std::cin >> size;
     
     int numbers[size] = {};
     numbers[0] = 1;
@@ -17,11 +15,11 @@ int main(){
     }
 
     // printing sec.
-    cout << "---------------------" << endl;
+    std::cout << "---------------------\n";
     for (int j = 0; j < size; j++){
-        cout << numbers[j];
+        std::cout << numbers[j];
         // visual thgs.
-        (j + 1) % 10 ? cout << " " : cout << endl;
+        (j + 1) % 10 ? std::cout << " " : std::cout << '\n';
     }
     
     return 0;
